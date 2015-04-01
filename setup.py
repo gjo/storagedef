@@ -17,6 +17,8 @@ except:
 
 requires = (
     'botocore',
+    'pastedeploy',
+    'zope.interface',
 )
 
 setup(
