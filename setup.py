@@ -23,7 +23,7 @@ requires = (
 
 setup(
     name='storagedef',
-    version='0.1.dev1',
+    version='0.1',
     description=description,
     long_description=long_description,
     author='OCHIAI, Gouji',
