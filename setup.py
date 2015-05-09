@@ -16,7 +16,7 @@ except:
 
 
 requires = (
-    'botocore',
+    'botocore_paste',
     'pastedeploy',
     'zope.interface',
 )
