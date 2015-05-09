@@ -2,16 +2,16 @@
 
 from io import BytesIO
 from zope.interface import implementer
-from .base import StorageEngine
-from .exceptions import DoesNotExist
-from .interfaces import IStorageEngine
+from ..base import StorageEngine
+from ..exceptions import DoesNotExist
+from ..interfaces import IStorageEngine
 
 
 @implementer(IStorageEngine)
-class MemoryStorageEngine(StorageEngine):
+class LocalMemoryStorageEngine(StorageEngine):
 
     def __init__(self, **kwargs):
-        super(MemoryStorageEngine, self).__init__(**kwargs)
+        super(LocalMemoryStorageEngine, self).__init__(**kwargs)
         self.storage = {}
 
     def delete(self, filename):

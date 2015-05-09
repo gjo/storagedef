@@ -34,7 +34,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=requires,
-    test_suite='storagedef.tests',
+    test_suite='storagedef',
     classifiers=[
         'Framework :: Paste',
         'Framework :: Pyramid',
