@@ -3,12 +3,12 @@
 import unittest
 
 
-class FromConfigTestCase(unittest.TestCase):
+class SessionTestCase(unittest.TestCase):
 
     def test_load_memory(self):
-        from ..loader import from_config
+        from ..session import Session
         from ..engines.localmemory import LocalMemoryStorageEngine
-        storage = from_config({
+        session = Session.from_config({
             'provider': 'storagedef:LocalMemoryStorageEngine'
         })
-        self.assertIsInstance(storage, LocalMemoryStorageEngine)
+        self.assertIsInstance(session.engine, LocalMemoryStorageEngine)
